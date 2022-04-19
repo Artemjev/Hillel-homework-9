@@ -1,10 +1,10 @@
 ***TODO:***
 -----------------------------
 Develop a value validator according to the attached diagram.
+![ValidatorDiagram](https://user-images.githubusercontent.com/18448571/163901920-a6871a3b-6397-49f0-bb9e-4502335ff40e.png)
 
 Interface **ObjectValidator\<T>** is used to validate values.
 Its implementation **RulesBasedObjectValidator\<T>** performs validation according to the list of rules (**ValidatorRule** interface).
-![ValidatorDiagram](https://user-images.githubusercontent.com/18448571/163901920-a6871a3b-6397-49f0-bb9e-4502335ff40e.png)
 Each rule checks the value according to its own criteria and contains 2 methods:
 
 ***validate*** - returns the result of field validation;
